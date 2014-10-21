@@ -20,7 +20,7 @@ comp-lzo
 local <%= @local %>
 <% if @routes -%>
 <% @routes.each do |route| -%>
-<%= route %>
+push "<%= route %>"
 <% end -%>
 <% end -%>
 <% if @script_security > 1 -%>
